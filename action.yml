@@ -1,0 +1,19 @@
+name: "Slack Notify Build"
+description: "Report GitHub Actions build status on Slack"
+branding:
+  icon: message-square
+  color: purple
+inputs:
+  webhook_url:
+    description: "The Slack incoming webhook URL."
+    required: true
+  status:
+    description: "The status to list in the update."
+    required: true
+  color:
+    description: "The color of the Slack attachment."
+    required: true
+    default: "#cccccc"
+runs:
+  using: "node20"
+  main: "dist/index.js"

@@ -1,0 +1,16 @@
+{
+  "name": "action-slack-notify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "ncc build index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.5"
+  }
+}
